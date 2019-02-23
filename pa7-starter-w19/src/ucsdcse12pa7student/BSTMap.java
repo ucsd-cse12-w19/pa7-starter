@@ -105,6 +105,7 @@ public class BSTMap<K, V> implements OrderedDefaultMap<K, V> {
 
 	@Override
 	public V get(K key) {
+		if(key == null) { throw new IllegalArgumentException("null key"); }
 		return this.get(this.root, key);
 	}
 
@@ -169,6 +170,7 @@ public class BSTMap<K, V> implements OrderedDefaultMap<K, V> {
 
 	@Override
 	public boolean containsKey(K key) {
+		if(key == null) { throw new IllegalArgumentException("null key"); }
 		return this.containsKey(this.root, key);
 	}
 
