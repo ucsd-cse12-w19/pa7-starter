@@ -72,20 +72,17 @@ public interface OrderedDefaultMap<K, V> {
 	 * @see https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TreeMap.html#ceilingKey(K)
 	 * @param node
 	 * @param query
-	 * @return The largest key in the tree smaller than query, or null if no key in
-	 *         the tree is smaller than query
+	 * @return The smallest key in the tree larger than query, or null if no key in
+	 *         the tree is larger than query
 	 */
 	public K ceiling(K key);
 
 	/**
-	 * Returns all the keys in the map that are between low (inclusive) and high
-	 * (exclusive)
-	 * 
 	 * @throws IllegalArgumentException
 	 *             if high is smaller than low
 	 * @param low
 	 * @param high
-	 * @return
+	 * @return all the keys in the map that are between low (inclusive) and high (exclusive)
 	 */
 	public List<K> range(K low, K high);
 
