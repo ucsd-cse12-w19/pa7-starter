@@ -1,0 +1,3 @@
+big words are not included here nor is punctuation or words with capital letters or apostrophes
+these words are simple to avoid issues with filtering
+they do span across multiple lines though and there may be some big words like logarithmic
